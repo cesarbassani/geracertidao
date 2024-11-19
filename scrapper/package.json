@@ -1,0 +1,29 @@
+{
+  "name": "scrapper",
+  "version": "1.0.0",
+  "description": "Projeto que busca e armazena as certidões dos fornecedores.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "test -f .env || cp env .env",
+    "start": "node index.js | bunyan -o short",
+    "dev": "nodemon $NODE_DEBUG_OPTION index.js | bunyan -o short"
+  },
+  "author": "Adolfo Marangoni Hengling <adolfohengling@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bunyan": "^1.8.12",
+    "dnode": "^1.2.2",
+    "dotenv": "^6.1.0",
+    "gridfs-stream": "^1.1.1",
+    "image-to-base64": "^2.0.1",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.23",
+    "mongoose": "^5.3.12",
+    "pdfkit": "^0.8.3",
+    "puppeteer": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  }
+}

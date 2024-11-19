@@ -1,0 +1,21 @@
+export default {
+    ADD_COMPANY: 'addCompany',
+    ADD_TOKEN: 'addToken',
+    AFTER_LOGIN: 'afterLogin',
+    ALL_USERS: 'allUsers',
+    ALL_LOGS: 'allLogs',
+    CONFIRM_EMAIL: 'confirmEmail',
+    FORGET_PASSWORD: 'forgetPassword',
+    GENERATE_DOCUMENT: 'generateDocument',
+    LOGIN: 'login',
+    LOGIN_FACEBOOK: 'loginFacebook',
+    LOGOUT: 'logout',
+    MY_COMPANIES: 'myCompanies',
+    MY_SUBSCRIPTION: 'mySubscription',
+    REGISTER: 'register',
+    REMOVE_TOKEN: 'removeToken',
+    UPDATE_DOCUMENT_STATUS: 'updateDocumentStatus',
+    UPDATE_PASSWORD: 'updatePassword',
+    UPDATE_USER: 'updateUser',
+    VERIFY_TOKEN: 'verifyToken'
+}

@@ -1,0 +1,81 @@
+{
+  "name": "gera-certidao-app",
+  "description": "All brazilian public certificates in one place",
+  "version": "1.0.0",
+  "license": "DOC",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/codate/certja.git"
+  },
+  "scripts": {
+    "dev": "vue-cli-service serve --open --https --port=3000",
+    "build": "vue-cli-service build --no-clean",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit --config jest.config.js --no-cache",
+    "quality": "npm run test:unit && node ./sonar.js"
+  },
+  "dependencies": {
+    "@fnando/cnpj": "^0.1.1",
+    "axios": "^0.18.0",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.23",
+    "string-mask": "^0.3.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vee-validate": "^2.1.0-beta.11",
+    "vue": "^2.5.17",
+    "vue-awesome": "^3.2.0",
+    "vue-router": "^3.0.1",
+    "vue-the-mask": "^0.11.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@babel/polyfill": "^7.0.0-beta.49",
+    "@vue/cli-plugin-babel": "^3.0.5",
+    "@vue/cli-plugin-eslint": "^3.0.5",
+    "@vue/cli-plugin-unit-jest": "^3.0.5",
+    "@vue/cli-service": "^3.0.5",
+    "@vue/test-utils": "^1.0.0-beta.25",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^23.0.1",
+    "babel-plugin-istanbul": "^5.1.0",
+    "chai": "^4.1.2",
+    "expect": "^23.6.0",
+    "flush-promises": "^1.0.0",
+    "istanbul-instrumenter-loader": "^3.0.1",
+    "less": "^3.8.0",
+    "less-loader": "^4.1.0",
+    "nyc": "^13.1.0",
+    "sinon": "^6.3.5",
+    "sonarqube-scanner": "^2.1.2",
+    "vue-cli-plugin-vuetify": "^0.1.6",
+    "vue-template-compiler": "2.5.17"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true,
+      "jest": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
